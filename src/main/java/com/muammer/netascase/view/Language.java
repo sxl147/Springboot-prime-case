@@ -1,15 +1,15 @@
 package com.muammer.netascase.view;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.MessageSource;
-import org.springframework.stereotype.Controller;
-
-import javax.faces.bean.ManagedBean;
-import javax.faces.bean.SessionScoped;
-import javax.faces.context.FacesContext;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.MessageSource;
+import org.springframework.stereotype.Controller;
 
 @ManagedBean(name = "language")
 @SessionScoped
@@ -18,7 +18,6 @@ public class Language {
 
 	@Autowired
 	private MessageSource messageSource;
-
 	private Locale locale;
 
 	Map<String, Locale> languages = new HashMap<String, Locale>();
@@ -36,7 +35,6 @@ public class Language {
 		String message = messageSource.getMessage(property, null, this.locale);
 		return message;
 	}
-
 
 	public Map<String, Locale> getLanguages() {
 		return languages;

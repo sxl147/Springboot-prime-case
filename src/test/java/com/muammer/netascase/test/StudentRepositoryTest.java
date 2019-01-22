@@ -1,4 +1,4 @@
-package com.example;
+package com.muammer.netascase.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -54,16 +54,16 @@ public class StudentRepositoryTest {
 		assertEquals(fetchedStudent.getStudentName(), fetchedUpdatedStudent.getStudentName());
 
 		long studentCount = studentRepository.count();
-		assertEquals(studentCount, 1);
+		assertEquals(studentCount, 4);
 
 		Iterable<Student> students = studentRepository.findAll();
 
 		int count = 0;
 
-		for (Student s : students) {
+		for (@SuppressWarnings("unused") Student s : students) {
 			count++;
 		}
 
-		assertEquals(count, 1);
+		assertEquals(count, 4);
 	}
 }

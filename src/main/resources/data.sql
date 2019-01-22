@@ -1,0 +1,3 @@
+insert into student (city, ilce, image, mobilenumber, name, surname, id) values ('Ankara', 'Cankaya', null, '(123) 123-1233', 'Muammer', 'Sahin', 'h2muammerid');       
+insert into student (city, ilce, image, mobilenumber, name, surname, id) values ('Kirsehir', 'Cicekdagi', null, '(456) 456-4566', 'Ali', 'Yilmaz', 'h2aliid');
+insert into student (city, ilce, image, mobilenumber, name, surname, id) values ('Istanbul', 'Kadikoy', null, '(190) 719-0719', 'Ahmet', 'Yildirim', 'h2ahmetid');
